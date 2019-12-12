@@ -20,7 +20,7 @@ quic = ["rustls/quic"]
 log = { version = "0.4.4", optional = true }
 rustls = { path = "../rustls" }
 sct = "0.6"
-webpki = "0.21.0"
+webpki = { git = "https://github.com/deltachat/webpki" }
 
 [dev-dependencies]
 ct-logs = "0.6"
@@ -32,7 +32,8 @@ serde = "1.0"
 serde_derive = "1.0"
 tempfile = "3.0"
 vecio = "0.1"
-webpki-roots = "0.18"
+webpki-roots = { git = "https://github.com/deltachat/webpki-roots" }
+# webpki-roots = "0.18"
 
 [[example]]
 name = "tlsclient"
